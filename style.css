@@ -5,3 +5,38 @@
 .icon a i {
   font-size: 2.3rem;
 }
+
+.billboard-container {
+  background-image: url(images/house-1353389_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.search-container {
+  background-color: rgba(248, 249, 250, 0.7);
+}
+
+.billboard-contain {
+  width: 64%;
+  padding-bottom: 140px;
+}
+
+.billboard-title {
+  margin-top: 140px;
+}
+
+input[type=text] {
+  background-color: white;
+  color: black;
+}
+
+.search-button {
+  background-color: #d3564a;
+  color: white;
+}
+
+.hiw-button {
+  background-color: rgba(248, 249, 250, 0.7);
+  font-size: 17px;
+}

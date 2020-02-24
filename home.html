@@ -13,8 +13,11 @@
     <title>Your Next Home!</title>
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+
     <nav class="nav-bar navbar container-fluid d-flex flex-row">
-      <div class="nav-left float-left pb-2">
+      <div class="nav-left float-left pb-2 pl-3 ml-3">
         <div class="icon d-flex align-items-center justify-content-center">
           <a href="#" class="text-decoration-none text-white d-flex flex-row align-items-baseline">
             <i class="fas fa-map-marker-alt"></i>
@@ -23,7 +26,7 @@
         </div>
       </div>
       <div class="nav-right d-flex justify-content-end align-items-center position-relative pr-2 float-right">
-        <ul class="options d-flex align-items-end list-unstyled justify-content-center list-inline mb-0">
+        <ul class="options d-flex align-items-end list-unstyled justify-content-center list-inline mb-0 pr-3 mr-3">
           <li class="list-inline-item pr-3">
             <a href="#" class="text-decoration-none text-white font-weight-bolder d-flex flex-row align-items-baseline">
               <i class="fas fa-search"></i>
@@ -52,6 +55,25 @@
       </div>
     </nav>
 
+    <!-- Billboard Section -->
+
+    <main class="container-fluid p-0">
+      <div class="billboard-container container-fluid">
+        <div class="billboard-contain container-fluid d-flex flex-column align-items-center justify-content-center">
+          <h2 class="billboard-title text-white text-uppercase font-weight-bolder pt-5 mb-3">Your Next Home!... Your gateway to your new life.</h2>
+          <div class="search-container rounded py-3 px-2 my-2">
+            <form action="#" class="d-flex flex-column justify-content-start pt-3 pb-3 pr-4 pl-3">
+              <label for="search" class="mb-0 text-uppercase font-weight-bolder">Search by key word:</label>
+              <div class="search-text-area d-flex flex-row">
+                <input type="text" id="search" placeholder="" size="105" class="border-1 outline-0 p-1 rounded">
+                <button type="submit" class="search-button text-uppercase font-weight-bolder text-white px-2 rounded">SEARCH</button>
+              </div>
+            </form>
+          </div>
+          <button type="button" class="hiw-button font-weight-bolder px-3 py-2 rounded mt-5">How it works</button>
+        </div>
+      </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
