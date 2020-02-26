@@ -40,3 +40,126 @@ input[type=text] {
   background-color: rgba(248, 249, 250, 0.7);
   font-size: 17px;
 }
+
+.howto-title {
+  font-size: 17px;
+  color: #d3564a;
+}
+
+.steps-container {
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 50%;
+  flex-direction: column;
+  flex-shrink: 3;
+}
+
+.s1 {
+  padding-right: 220px;
+}
+
+.s2 {
+  padding-left: 220px;
+}
+
+.step-title {
+  font-size: 15px;
+}
+
+.step-description {
+  text-align: center;
+  font-size: 13px;
+}
+
+.steps-icons {
+  font-size: 30px;
+}
+
+.description-detail {
+  justify-content: space-between;
+}
+
+.left-side-description {
+  width: 70%;
+}
+
+.left-side-description h5 {
+  font-size: 15px;
+}
+
+.left-side-description p {
+  font-size: 13px;
+}
+
+.left-side-description button {
+  font-size: 13px;
+  width: 25%;
+}
+
+.right-side-description {
+  width: 30%;
+}
+
+.img-description {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.interest-links,
+.subscribe-section {
+  flex-direction: row;
+  background-color: black;
+}
+
+.links-list {
+  flex-direction: row;
+  border-color: gray;
+}
+
+.links-list li {
+  font-size: 13px;
+}
+
+.interest-links a {
+  align-self: flex-start;
+  top: -8px;
+}
+
+.interest-links a i {
+  font-size: 20px;
+}
+
+.subscribe form div input[type="text"] {
+  background-color: black;
+  color: black;
+  font-size: 11px;
+}
+
+.subscribe form div button {
+  font-size: 11px;
+}
+
+.question {
+  text-align: center;
+  font-size: 13px;
+}
+
+.question a {
+  color: #d3564a;
+}
+
+.title {
+  text-align: center;
+}
+
+.social-media-list li a i {
+  font-size: 12px;
+}
+
+.thanks {
+  font-size: 12px;
+}
