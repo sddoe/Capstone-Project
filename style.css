@@ -213,6 +213,38 @@ input[type=text] {
   letter-spacing: 1px;
 }
 
+.filters-container {
+  background-color: #eeeeee;
+}
+
+.filters-container form {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-title {
+  color: #949393;
+  text-align: center;
+}
+
+.filter-input {
+  width: 100% !important;
+  height: 25.45px;
+}
+
+.results-list {
+  flex-direction: row;
+}
+
+.result {
+  width: 33.33%;
+  margin-bottom: 0.5rem;
+}
+
+.results-title {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .steps-container {
     flex-direction: column;
@@ -232,6 +264,14 @@ input[type=text] {
 
   .left-side-description button {
     width: 45%;
+  }
+
+  .results-list {
+    flex-direction: column;
+  }
+
+  .result {
+    width: 100%;
   }
 }
 
@@ -269,5 +309,13 @@ input[type=text] {
 
   .img-description {
     margin-top: 40px;
+  }
+
+  .results-list {
+    flex-wrap: wrap;
+  }
+
+  .result {
+    width: 45%;
   }
 }
