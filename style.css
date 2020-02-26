@@ -1,5 +1,7 @@
 .nav-bar {
   background-color: #d3564a;
+  position: sticky;
+  top: 0;
 }
 
 .icon a i {
@@ -151,30 +153,41 @@ input[type=text] {
 
 .links-list {
   flex-direction: row;
-  border-color: gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
 }
 
 .links-list li {
-  font-size: 13px;
+  font-size: 16px;
 }
 
-.interest-links a {
+.icon-list {
   align-self: flex-start;
   top: -8px;
+  border: 1px solid gray;
 }
 
 .interest-links a i {
-  font-size: 20px;
+  font-size: 40px;
+}
+
+.title-md {
+  font-size: 16px;
 }
 
 .subscribe form div input[type="text"] {
   background-color: black;
-  color: black;
+  color: gray;
   font-size: 11px;
 }
 
 .subscribe form div button {
   font-size: 11px;
+}
+
+.about {
+  padding: 0 100px;
 }
 
 .question {
@@ -191,9 +204,11 @@ input[type=text] {
 }
 
 .social-media-list li a i {
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .thanks {
   font-size: 12px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
 }
