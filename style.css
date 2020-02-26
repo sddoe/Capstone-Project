@@ -3,6 +3,7 @@
   position: sticky;
   top: 0;
   flex-direction: row;
+  z-index: 1;
 }
 
 .options {
@@ -245,6 +246,59 @@ input[type=text] {
   text-align: center;
 }
 
+.details-sub {
+  border: 1px solid gray;
+}
+
+.details-title {
+  color: #d3564a;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+}
+
+.details-list {
+  flex-wrap: wrap;
+}
+
+.detail {
+  width: 49%;
+  text-align: center;
+  border: 1px solid #f8f9fa;
+}
+
+.apply-button {
+  width: 12%;
+  align-self: end;
+  letter-spacing: 1px;
+}
+
+.details-container p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.more-details {
+  background-color: #eeeeee;
+  font-size: 20px;
+}
+
+.more-details span a {
+  letter-spacing: 3px;
+}
+
+.directions {
+  color: #d3564a;
+  font-size: 18px;
+  text-align: center;
+}
+
+.input-directions {
+  top: 10px;
+  left: 222px;
+  font-size: 14px;
+  z-index: 0;
+}
+
 @media (max-width: 768px) {
   .steps-container {
     flex-direction: column;
@@ -272,6 +326,18 @@ input[type=text] {
 
   .result {
     width: 100%;
+  }
+
+  .input-directions {
+    left: 5px;
+  }
+
+  .details-list {
+    justify-content: center;
+  }
+
+  .apply-button {
+    width: 15%;
   }
 }
 
@@ -317,5 +383,17 @@ input[type=text] {
 
   .result {
     width: 45%;
+  }
+
+  .input-directions {
+    left: 5px;
+  }
+
+  .details-list {
+    justify-content: center;
+  }
+
+  .apply-button {
+    width: 15%;
   }
 }
