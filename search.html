@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Search</title>
+  </head>
+  <body>
+    
+    <!-- Navigation Bar -->
+
+    <nav class="nav-bar navbar container-fluid d-flex">
+      <div class="nav-left float-left pb-2 pl-3 ml-3">
+        <div class="icon d-flex align-items-center justify-content-center">
+          <a href="home.html" class="text-decoration-none text-white d-flex flex-row align-items-baseline">
+            <i class="fas fa-map-marker-alt"></i>
+            <p class="h1 text-white font-weight-bolder mb-0 pl-1">Your Next Home!</p>
+          </a>
+        </div>
+      </div>
+      <div class="nav-right d-flex justify-content-end align-items-center position-relative pr-2 pl-3 ml-3 float-right">
+        <ul class="options d-flex align-items-end list-unstyled justify-content-center list-inline mb-0">
+          <li class="list-inline-item">
+            <a href="search.html" class="text-decoration-none text-white font-weight-bolder d-flex flex-row align-items-baseline">
+              <i class="fas fa-search"></i>
+              <p class="nav-text pl-2 mb-0">SEARCH</p>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder d-flex flex-row align-items-baseline">
+              <i class="fas fa-user"></i>
+              <p class="nav-text pl-2 mb-0">ABOUT</p>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder d-flex flex-row align-items-baseline">
+              <i class="fas fa-rss"></i>
+              <p class="nav-text pl-2 mb-0">BLOG</p>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder d-flex flex-row align-items-baseline">
+              <i class="fas fa-bars"></i>
+              <p class="nav-text pl-2 mb-0">MORE</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Filters Section -->
+
+    <div class="filters-container container-fluid d-flex flex-column align-items-center justify-content-center px-0 py-5 my-5">
+      <h1 class="filter-title mt-4 mb-4 font-weight-bold px-2">Filter by city, county, price, type of house, parking and nearby locations:</h1>
+      <form action="#" class="d-flex flex-row align-items-end mb-5 px-2">
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="cName" class="font-weight-bold text-dark">CITY:</label>
+          <input type="text" id="cName" class="filter-input rounded border-light">
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="county" class="font-weight-bold text-dark">COUNTY:</label>
+          <select id="county" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="c1">County 1</option>
+          <option value="c2">County 2</option>
+          <option value="c3">County 3</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="price" class="font-weight-bold text-dark">PRICE:</label>
+          <select id="price" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="p1">Price 1</option>
+          <option value="p2">Price 2</option>
+          <option value="p3">Price 3</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="type" class="font-weight-bold text-dark">TYPE:</label>
+          <select id="type" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="t1">Type 1</option>
+          <option value="t2">Type 2</option>
+          <option value="t3">Type 3</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="parking" class="font-weight-bold text-dark">PARKING:</label>
+          <select id="parking" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="y">Yes</option>
+          <option value="n">No</option>
+          </select>
+        </div>
+        <div class="filter-options d-flex flex-column mx-1">
+          <label for="nearby" class="font-weight-bold text-dark">NEARBY:</label>
+          <select id="nearby" class="rounded border-light">
+          <option value="#" disabled selected>..</option>
+          <option value="pk">Parks</option>
+          <option value="sch">Schools</option>
+          <option value="ml">Malls</option>
+          <option value="dt">Downtown</option>
+          </select>
+        </div>
+        <div class="filters-buttons d-flex flex-row mx-1">
+          <button type="submit" class="font-weight-bold text-white px-2 rounded bg-info border-light mx-1 py-1">
+            Search
+          </button>
+          <button type="submit" class="font-weight-bold text-white px-2 rounded bg-warning border-light mx-1 py-1">
+            <i class="fas fa-edit"></i>
+            Clear filter
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Results Section -->
+
+    <h3 class="results-title text-black-50 mb-4">Search Results Found 3 house(s).</h3>
+    <div class="results-container container-fluid d-flex my-5 px-5">
+      <ul class="results-list d-flex px-0">
+        <li class="list-inline-item result"><a href="detail.html"><img src="https://st2.depositphotos.com/3474805/6536/v/950/depositphotos_65365165-stock-illustration-house-building-with-price-tags.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+        <li class="list-inline-item result"><a href="detail.html"><img src="https://st2.depositphotos.com/3474805/6536/v/950/depositphotos_65365165-stock-illustration-house-building-with-price-tags.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+        <li class="list-inline-item result"><a href="detail.html"><img src="https://st2.depositphotos.com/3474805/6536/v/950/depositphotos_65365165-stock-illustration-house-building-with-price-tags.jpg" alt="#" class="img-result img-fluid img-thumbnail"></a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer class="container-fluid d-flex flex-column align-items-center justify-content-center bg-dark px-0">
+      <div class="interest-links container-fluid d-flex py-3 align-items-center justify-content-center row">
+        <ul class="links-list d-flex px-2 col-lg-5 py-2">
+          <li class="list-inline-item">
+            <a href="home.html" class="text-decoration-none text-white font-weight-bolder">HOME</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="search.html" class="text-decoration-none text-white font-weight-bolder">SEARCH</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">ABOUT US</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">ADVERTISE</a>
+          </li>
+        </ul>
+        <a href="home.html" class="icon-list text-decoration-none text-white d-flex rounded-circle p-4 position-relative">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <ul class="links-list d-flex px-2 col-lg-5 py-2">
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">FACEBOOK</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">TWITTER</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">BLOG</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-decoration-none text-white font-weight-bolder">GOOGLE+</a>
+          </li>
+        </ul>
+      </div>
+      <div class="subscribe-section container-fluid pt-4 row align-items-start justify-content-center">
+        <div class="subscribe col-lg-5 d-flex align-items-center justify-content-start flex-column px-2">
+          <h6 class="title-md">
+            <a href="#" class="title text-white font-weight-bolder">SUBSCRIBE</a>
+          </h6>
+          <form action="#" class="d-flex flex-column justify-content-start pt-3 pb-3 pr-4 pl-3">
+            <div class="d-flex flex-row">
+              <input type="text" id="search" placeholder="you@example.com" size="55" class="border p-2 rounded-left border-dark"/>
+              <button type="submit" class="font-weight-bold text-white px-2 rounded-right bg-dark border-dark">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contact col-lg-2 d-flex align-items-center justify-content-start flex-column px-2">
+          <h6 class="title-md">
+            <a href="#" class="title text-white font-weight-bolder">CONTACT</a>
+          </h6>
+          <p class="question text-dark">
+            Have a question or a suggestion? <br />
+            <a href="#">info@yournexthome.com</a>
+          </p>
+        </div>
+        <div class="about col-lg-5 d-flex align-items-center justify-content-start flex-column">
+          <h6 class="title-md">
+            <a href="#" class="title text-white font-weight-bolder">ABOUT</a>
+          </h6>
+          <p class="question text-dark">
+            Your Next Home! is an online platform that assists people to find a
+            suitable house for they to live by simply searching by address,
+            neighborhood name, street name, etc.
+            <a href="#">Learn More...</a>
+          </p>
+        </div>
+      </div>
+      <div class="social-media container-fluid pt-2 row align-items-start justify-content-center">
+        <ul class="social-media-list col-lg-3 d-flex justify-content-start">
+          <li class="list-inline-item pr-2">
+            <a href="#" class="text-white-50"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="list-inline-item pr-2">
+            <a href="#" class="text-white-50"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="list-inline-item pr-2">
+            <a href="#" class="text-white-50"><i class="fas fa-blog"></i></a>
+          </li>
+          <li class="list-inline-item pr-2">
+            <a href="#" class="text-white-50"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li class="list-inline-item pr-2">
+            <a href="#" class="text-white-50"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+        <p class="thanks col-lg-9 d-flex justify-content-end font-weight-bold text-uppercase pt-1">
+          &#169; Your Next Home! 2020. All rights reserved. Love and
+          Awesomeness.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/526bcd4356.js" crossorigin="anonymous"></script>
+  </body>
+</html>
