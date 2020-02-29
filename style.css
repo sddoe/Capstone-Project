@@ -235,11 +235,11 @@ input[type=text] {
   height: 25.45px;
 }
 
-#nearby, 
+#nearby,
 #parking,
-#type, 
-#price, 
-#county, 
+#type,
+#price,
+#county,
 #cName {
   height: 34.23px;
 }
