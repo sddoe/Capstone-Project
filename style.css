@@ -37,6 +37,7 @@
 
 .billboard-title {
   margin-top: 140px;
+  font-size: 32px;
 }
 
 input[type=text] {
@@ -226,11 +227,41 @@ input[type=text] {
 .filter-title {
   color: #949393;
   text-align: center;
+  font-size: 26px;
 }
 
 .filter-input {
   width: 100% !important;
   height: 25.45px;
+}
+
+#nearby, 
+#parking,
+#type, 
+#price, 
+#county, 
+#cName {
+  height: 34.23px;
+}
+
+#county {
+  width: 133px;
+}
+
+#price {
+  width: 115px;
+}
+
+#type {
+  width: 114px;
+}
+
+#parking {
+  width: 113px;
+}
+
+#nearby {
+  width: 140px;
 }
 
 .results-list {
@@ -254,6 +285,7 @@ input[type=text] {
   color: #d3564a;
   word-spacing: 2px;
   letter-spacing: 3px;
+  font-size: xx-large;
 }
 
 .details-list {
